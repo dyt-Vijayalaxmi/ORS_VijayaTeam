@@ -17,7 +17,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-import com.dyt.ors.config.Config;
+import com.dyt.ors.Config.Config;
+
+
+
 //================================================================
 /*
 Name			: WebLibrary

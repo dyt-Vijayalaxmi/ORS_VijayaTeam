@@ -3,10 +3,11 @@ package com.dyt.ors.Screenpages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.dyt.Generic.Weblibrary;
-import com.dyt.Reports.Reporter;
 
-public class AddProducts extends Weblibrary{
+import com.dyt.Reports.Reporter;
+import com.dyt.generic.WebLibrary;
+
+public class AddProducts extends WebLibrary{
 	
     //=========WebElements for AddProducts page================
 	
@@ -141,15 +142,15 @@ public class AddProducts extends Weblibrary{
 		bStatus = uploadFile(edit_prdImage,  Imgfilepath);
 		Reporter.log(bStatus, "file is selected", "file is not selected");
 		
-		wait(3);
+	
 		
 		bStatus = uploadFile(edit_prdSDS,  "SDSfilepath");
 		Reporter.log(bStatus, "file is selected", "file is not selected");
-		wait(3);
+		
 		
 		bStatus = uploadFile(edit_prdPSS,  "PSSfilepath");
 		Reporter.log(bStatus, "file is selected", "file is not selected");
-		wait(3);
+		
 		
 		bStatus =clickElement(btn_submit);
 		Reporter.log(bStatus, "submit button is clicked", "submit button is clicked");

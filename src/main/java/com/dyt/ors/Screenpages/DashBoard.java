@@ -2,11 +2,10 @@ package com.dyt.ors.Screenpages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import com.dyt.Generic.Weblibrary;
 import com.dyt.Reports.Reporter;
+import com.dyt.generic.WebLibrary;
 
-public class DashBoard extends Weblibrary{
+public class DashBoard extends WebLibrary{
 	
 	    //=========WebElements for Dashboard page================
 		@FindBy(xpath="//span[text()='Dashboard']")

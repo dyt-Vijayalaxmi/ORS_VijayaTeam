@@ -5,11 +5,10 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import com.dyt.Generic.Weblibrary;
 import com.dyt.Reports.Reporter;
+import com.dyt.generic.WebLibrary;
 
-public class EditMainCategory extends Weblibrary{
+public class EditMainCategory extends WebLibrary{
 	
 	@FindBy(xpath="//table[@id='dataTable']/tbody/tr[2]/td[3]")
 	public static WebElement select_MainCategory;

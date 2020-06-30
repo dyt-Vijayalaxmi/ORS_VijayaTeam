@@ -3,10 +3,11 @@ package com.dyt.ors.Screenpages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.dyt.Generic.Weblibrary;
-import com.dyt.Reports.Reporter;
 
-public class AddMainCategory extends Weblibrary {
+import com.dyt.Reports.Reporter;
+import com.dyt.generic.WebLibrary;
+
+public class AddMainCategory extends WebLibrary {
 	//=========WebElements for Add Main Category page==================
 	
 				@FindBy(xpath="//span[text()='Products']")

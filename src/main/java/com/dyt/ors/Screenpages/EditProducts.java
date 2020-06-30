@@ -6,11 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import com.dyt.Generic.Weblibrary;
 import com.dyt.Reports.Reporter;
+import com.dyt.generic.WebLibrary;
 
-public class EditProducts extends Weblibrary{
+public class EditProducts extends WebLibrary{
 	
     //=========WebElements for AddProducts page================
 	

@@ -2,11 +2,10 @@ package com.dyt.ors.Screenpages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import com.dyt.Generic.Weblibrary;
 import com.dyt.Reports.Reporter;
+import com.dyt.generic.WebLibrary;
 
-public class AddSubCategory extends Weblibrary{
+public class AddSubCategory extends WebLibrary{
 	//===============WebElements for AddSubCategory============
 		@FindBy(xpath="//span[text()='Products']")
 		public static WebElement navlink_Products;	

@@ -6,10 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.dyt.Generic.Weblibrary;
 import com.dyt.Reports.Reporter;
+import com.dyt.generic.WebLibrary;
 
-public class EditSubCategory extends Weblibrary{
+public class EditSubCategory extends WebLibrary{
 	//=================WebElements for EditSubCategorypage====================================
 		@FindBy(xpath="//input[@id=orsMainCategories ors_mc_id']")
 		public static WebElement click_editicon;

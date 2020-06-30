@@ -8,13 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import com.dyt.ors.config.Config;
-import com.dyt.reports.Reporter;
+import com.dyt.Reports.Reporter;
+import com.dyt.ors.Config.Config;
+
 
 public class BaseClass extends Config {
 	
@@ -48,7 +50,7 @@ public class BaseClass extends Config {
 					break; 
 				  
 				case "CHROME":
-					System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//servers//chromedriver.exe");
 					driver = new ChromeDriver();
 					break;
 					
