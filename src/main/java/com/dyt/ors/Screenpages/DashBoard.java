@@ -23,7 +23,7 @@ public class DashBoard extends WebLibrary{
 		@FindBy(xpath="//a[text()='Products']")
 		public static WebElement link_Products;
 				
-		//================ Methods ============================
+		//================ navigate to MainCategories Link ============================
 		public static void navMainCategories() {
 			boolean bStatus;
 			
@@ -33,7 +33,7 @@ public class DashBoard extends WebLibrary{
 			bStatus = clickElement(link_MainCategories);
 			Reporter.log(bStatus, "Main Categories link clicked", "Main Categories link not clicked");		
 		}
-		//=======================================================
+		//======================navigate to SubCategories Link =================================
 		public static void navSubCategories() {
 			boolean bStatus;
 			
@@ -43,7 +43,7 @@ public class DashBoard extends WebLibrary{
 			bStatus = clickElement(link_SubCategories);
 			Reporter.log(bStatus, "Sub Categories link clicked", "Sub Categories link not clicked");		
 		}
-		//=======================================================
+		//===================navigate to Products Link  ====================================
 		public static void navProducts() {
 			boolean bStatus;
 			
