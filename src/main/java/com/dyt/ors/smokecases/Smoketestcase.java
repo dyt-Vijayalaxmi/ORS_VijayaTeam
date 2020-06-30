@@ -18,7 +18,7 @@ import com.dyt.utilities.ExcelLib;
 public class Smoketestcase extends BaseClass {
 
 
-		
+	//============== Add Main Category====================== 	
 	@Test
 	public static void TC001_addMainCategory()
 	{		
@@ -34,6 +34,8 @@ public class Smoketestcase extends BaseClass {
 				
 	}
 
+	
+	//============== Add Sub Category====================== 	
 	@Test
 	public static void TC002_addSubCategory()
 	{		
@@ -48,6 +50,8 @@ public class Smoketestcase extends BaseClass {
 		addSubCategory.addSubCategory("ethane", "Mathane", "H");
 				
 	}
+	
+	//============== Add Products=========================== 	
 	@Test
 	public static void TC003_addProducts()
 	{		
@@ -63,6 +67,7 @@ public class Smoketestcase extends BaseClass {
 				
 	}
 	
+	//============== Edit Main Category====================== 	
 	@Test
 	public static void TC004_editMainCategory()
 	{		
@@ -81,6 +86,7 @@ public class Smoketestcase extends BaseClass {
 		
 	}
 	
+	//============== Edit Sub Category====================== 	
 	@Test
 	public static void TC005_editSubCategory()
 	{		
@@ -98,6 +104,7 @@ public class Smoketestcase extends BaseClass {
 		
 		}
 	
+	//============== Edit Products ====================== 	
 	@Test
 	public static void TC006_editProducts()
 	{		
@@ -114,6 +121,7 @@ public class Smoketestcase extends BaseClass {
 		editProduct.editProduct( "chlorine", "B++", "reddys", "2litres","50units","50000","E:\\pdf\\sel_Manul_Pdf.pdf");
 		}
 	
+	//============== Search Products ====================== 	
 	@Test
 	public static void TC007_searchProducts()
 	{		
