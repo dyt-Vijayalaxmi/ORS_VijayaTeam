@@ -50,7 +50,7 @@ public class BaseClass extends Config {
 					break; 
 				  
 				case "CHROME":
-					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//servers//chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver", "F:\\vijju\\javasampleproject\\chromedriver.exe");
 					driver = new ChromeDriver();
 					break;
 					

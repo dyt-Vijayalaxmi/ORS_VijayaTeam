@@ -27,7 +27,7 @@ public class Smoketestcase extends BaseClass {
 		Home home = PageFactory.initElements(driver, Home.class);
 		AddMainCategory addMainCategory= PageFactory.initElements(driver, AddMainCategory.class);
 		
-		home.navLoginpage();;
+		home.navLoginpage();
 		login.loginApp(data[0],data[1]);
 		addMainCategory.navAddmainCategory();
 		addMainCategory.addMainCategory(data[2], data[3],data[4]);
@@ -45,9 +45,9 @@ public class Smoketestcase extends BaseClass {
 		AddSubCategory addSubCategory= PageFactory.initElements(driver, AddSubCategory.class);
 		
 		home.navLoginpage();;
-		login.loginApp("admin","admin@123");
+		login.loginApp(data[0],data[1]);
 		addSubCategory.navAddSubCategory();
-		addSubCategory.addSubCategory("ethane", "Mathane", "H");
+		addSubCategory.addSubCategory(data[2], data[3],data[4]);
 				
 	}
 	
@@ -61,7 +61,7 @@ public class Smoketestcase extends BaseClass {
 		AddProducts addproduts= PageFactory.initElements(driver, AddProducts.class);
 		
 		home.navLoginpage();;
-		login.loginApp("admin","admin@123");
+		login.loginApp(data[0],data[1]);
 		addproduts.navAddProducts();
 		addproduts.addProducts("mono", "inse", "456", "chemical", "A++", "chemical", "678", "reddyslab", "30", "10", "Code150", "6000", "E","C:\\Users\\Chaitanya\\Desktop\\Project details\\Sample images\\images9.jpg","E:\\pdf\\sel_Manul_Pdf.pdf","E:\\pdf\\Manual.pdf");
 				
@@ -78,7 +78,7 @@ public class Smoketestcase extends BaseClass {
 		EditMainCategory editMainCategory= PageFactory.initElements(driver, EditMainCategory.class);
 		
 		home.navLoginpage();;
-		login.loginApp("admin","admin@123");
+		login.loginApp(data[0],data[1]);
 		dashBoard.navMainCategories();
 		editMainCategory.selectEditicon("ethane");
 		editMainCategory.editMainCategoryPage("dimethy", "E","C:\\Users\\Chaitanya\\Desktop\\Project details\\Sample images\\bencodryl-sf-500x500.jpg");
@@ -97,7 +97,7 @@ public class Smoketestcase extends BaseClass {
 		EditSubCategory editSubCategory= PageFactory.initElements(driver, EditSubCategory.class);
 		
 		home.navLoginpage();
-		login.loginApp("admin","admin@123");
+		login.loginApp(data[0],data[1]);
 		dashBoard.navSubCategories();
 		editSubCategory.selectEditicon("sample");
 		editSubCategory.editSubcategoryPage("testsample", "E");
@@ -115,7 +115,7 @@ public class Smoketestcase extends BaseClass {
 		EditProducts editProduct= PageFactory.initElements(driver, EditProducts.class);
 		
 		home.navLoginpage();;
-		login.loginApp("admin","admin@123");
+		login.loginApp(data[0],data[1]);
 		dashBoard.navProducts();
 		editProduct.selectEditicon("123");
 		editProduct.editProduct( "chlorine", "B++", "reddys", "2litres","50units","50000","E:\\pdf\\sel_Manul_Pdf.pdf");
