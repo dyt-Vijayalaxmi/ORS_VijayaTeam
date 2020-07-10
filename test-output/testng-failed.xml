@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.dyt.ors.smokecases.Smoketestcase">
+      <class name="com.dyt.ors.regression.AddProductsWithAllFieds">
         <methods>
-          <include name="TC001_addMainCategory"/>
           <include name="setupReport"/>
           <include name="flushReportAndOpen"/>
           <include name="closeBrowser"/>
-          <include name="TC002_addSubCategory"/>
+          <include name="TC017_EditProducts"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.dyt.ors.smokecases.Smoketestcase -->
+      </class> <!-- com.dyt.ors.regression.AddProductsWithAllFieds -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

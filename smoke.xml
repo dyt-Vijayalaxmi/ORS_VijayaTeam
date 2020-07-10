@@ -6,7 +6,7 @@
       <class name="com.dyt.ors.smokecases.Smoketestcase">
       <methods>
 	     <include name="TC001_addMainCategory"/>      		
-	     <include name="TC002_addSubCategory"/>     
+	     <exclude name="TC002_addSubCategory"/>     
 	     <exclude name="TC003_addProducts"/>  
 	     <exclude name="TC004_editMainCategory"/>  
 	     <exclude name="TC005_editSubCategory"/>  

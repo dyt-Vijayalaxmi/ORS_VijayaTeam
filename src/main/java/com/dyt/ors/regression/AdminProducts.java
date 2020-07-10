@@ -32,10 +32,7 @@ public class AdminProducts extends BaseClass {
 		Home home = PageFactory.initElements(driver, Home.class);
 		//Step 1: Login as an admin
 		Home.navLoginpage();
-		login.loginApp("admin","admin@123");
-		
-		
-		
+		login.loginApp("admin","admin@123");	
 		
 	}
 	//=============================================
